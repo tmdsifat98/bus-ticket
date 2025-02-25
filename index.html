@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Travels</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#1DD100",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <div
+        class="mx-auto md:px-6 lg:px-12 navbar bg-base-100 flex justify-between pr-2"
+      >
+        <div
+          class="flex flex-row-reverse justify-between md:flex-none w-full md:w-1/3"
+        >
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <i class="bx bx-menu md:hidden"></i>
+            </label>
+
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 -ml-28 z-[1] p-2 shadow bg-base-100 rounded-box w-36 flex flex-col justify-center items-center"
+            >
+              <li><a>Item 1</a></li>
+              <li><a>Parent</a></li>
+              <li><a>Item 3</a></li>
+              <button class="btn w-1/2 normal-case px-16">Button</button>
+            </ul>
+          </div>
+          <div>
+            <a class="p-0 text-center normal-case text-xl font-bold"
+              >S-Ticket</a
+            >
+          </div>
+        </div>
+        <div class="hidden md:flex lg:-ml-44">
+          <ul class="flex px-1 gap-12">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <button
+          class="btn hidden md:block text-primary-color px-10 normal-case border-primary-color"
+        >
+          Bus <i class="bx bx-bus"></i>
+        </button>
+      </div>
+      <!-- hero section starts here -->
+      <section class="px-2 lg:px-6 mt-2">
+        <div
+          class="hero min-h-screen rounded-2xl"
+          style="background-image: url(/images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-2xl">
+              <h1 class="mb-5 text-6xl w-full font-bold">
+                End-to-End Travel with
+                <span class="text-primary-color">S Paribahan</span>
+              </h1>
+              <p class="mb-7 mt-4">
+                Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button
+                class="btn bg-primary-color border-none normal-case font-bold text-black text-xl px-6"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card div here -->
+        <div
+          class="my-12 px-36 relative z-10 -top-28 grid grid-cols-3 gap-x-24 justify-around"
+        >
+          <div
+            class="flex gap-6 bg-white border rounded-3xl py-8 justify-around px-10 shadow-blue-400 border-b-primary-color border-b-4"
+          >
+            <div><img src="./images/people.png" alt="" /></div>
+            <div>
+              <h2 class="text-3xl font-bold">500K+</h2>
+              <p class="text-gray-600">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 bg-white border rounded-3xl py-8 justify-around px-10 shadow-blue-400 border-b-primary-color border-b-4"
+          >
+            <div><img src="./images/ticket-cupon.png" alt="" /></div>
+            <div>
+              <h2 class="text-3xl font-bold">1.7 lacks</h2>
+              <p class="text-gray-600">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="flex gap-6 bg-white border rounded-3xl py-8 justify-around px-10 shadow-blue-400 border-b-primary-color border-b-4"
+          >
+            <div><img src="./images/stoppage.png" alt="" /></div>
+            <div>
+              <h2 class="text-3xl font-bold">80K+</h2>
+              <p class="text-gray-600">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <div class="flex justify-between h-72">
+        <!-- first card -->
+        <div
+          class="flex justify-around gap-8 px-24 items-center bg-[#FFBF0F] rounded-xl"
+        >
+          <div>
+            <h2 class="text-5xl font-extrabold">15% OFF</h2>
+            <p class="text-2xl my-4 font-semibold">on your next purchase</p>
+            <p class="text-gray-600 text-2xl">use by January 2024</p>
+          </div>
+          <div>
+            <img width="62.5px" src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div>
+            <h2 class="text-5xl font-extrabold">NEW15</h2>
+            <p class="text-gray-600 text-2xl mt-4">Coupon Code</p>
+          </div>
+        </div>
+
+        <!-- 2nd card -->
+
+        <div
+          class="flex justify-around gap-8 px-24 items-center bg-[#F78C9C] rounded-xl"
+        >
+          <div>
+            <h2 class="text-5xl font-extrabold">20% OFF</h2>
+            <p class="text-2xl my-4 font-semibold">on your next purchase</p>
+            <p class="text-gray-600 text-2xl">use by January 2024</p>
+          </div>
+          <div>
+            <img width="62.5px" src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div>
+            <h2 class="text-5xl font-extrabold">Couple 20</h2>
+            <p class="text-gray-600 text-2xl mt-4">Coupon Code</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- js int section here -->
+      <section class="my-20">
+        <div>
+          <!-- first seat part -->
+          <div>
+            <!-- top intro part -->
+            <div>
+              <h2 class="text-4xl font-bold mb-6">Select Your Seat</h2>
+              <div
+                class="flex justify-between border-dashed border-b-2 border-t-2 border-t-gray-500 border-b-gray-500 py-6"
+              >
+                <div class="flex">
+                  <img src="images/seat-gray.png" alt="" />
+                  <p>Available</p>
+                </div>
+                <div class="flex">
+                  <img src="images/seat-green-filled.png" alt="" />
+                  <p>Selected</p>
+                </div>
+              </div>
+            </div>
+            <!-- seat distribution -->
+            <div class="flex gap-12">
+              <!-- seat part -->
+              <div class="w-3/5">
+                <!-- wheel or driver seat -->
+                <div class="text-right pr-6">
+                  <i
+                    class="bx bx-color text-4xl py-2 px-9 mt-3 border-2 rounded-xl bg-gray-200 text-black"
+                  ></i>
+                </div>
+                <!-- passenger seat -->
+                <div id="seat-container-A">
+                  <div class="mt-4">
+                    <div class="flex">
+                      <div class="grid grid-cols-1 gap-y-8 items-center mr-6">
+                        <p class="text-center">A</p>
+                        <p class="text-center">B</p>
+                        <p class="text-center">C</p>
+                        <p class="text-center">D</p>
+                        <p class="text-center">E</p>
+                        <p class="text-center">F</p>
+                        <p class="text-center">G</p>
+                        <p class="text-center">H</p>
+                        <p class="text-center">I</p>
+                        <p class="text-center">J</p>
+                      </div>
+                      <!-- !seat list -->
+                      <div
+                        class="grid grid-cols-4 flex-1 justify-between gap-x-36 mr-6 gap-y-8"
+                      >
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          A1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          A2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          A3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          A4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          B1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          B2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          B3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          B4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          C1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          C2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          C3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          C4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          D1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          D2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          D3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          D4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          E1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          E2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          E3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          E4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          F1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          F2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          F3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          F4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          G1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          G2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          G3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          G4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          H1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          H2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          H3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          H4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          I1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          I2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          I3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          I4
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          J1
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          J2
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          J3
+                        </button>
+                        <button
+                          class="py-2 border-2 bg-gray-200 close rounded-xl hover:bg-green-600 focus:bg-primary-color px-12"
+                        >
+                          J4
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- calculation part -->
+              <div class="w-2/6 bg-white shadow-lg rounded-xl p-5">
+                <!-- Seat Count -->
+                <div class="flex justify-between items-center border-b pb-2">
+                  <h2 class="text-lg font-semibold">Seat</h2>
+                  <span
+                    class="text-sm font-semibold bg-green-500 text-white px-2 py-1 rounded-full"
+                  >
+                    2
+                  </span>
+                </div>
+                <!-- Seat List -->
+                <div id="calculation-section" class="mt-3 space-y-2">
+                  <div
+                    id="remove-click"
+                    class="flex justify-between items-center"
+                  >
+                    <span class="text-gray-700 font-medium">N/A</span>
+                    <span class="text-gray-500">Not Selected</span>
+                    <span class="text-gray-700 font-semibold">0</span>
+                  </div>
+                </div>
+
+                <!-- Total Price -->
+                <div class="border-t mt-4 pt-2">
+                  <div class="flex justify-between font-semibold">
+                    <span>Total Price</span>
+                    <span>BDT <span id="price-calculation">0</span></span>
+                  </div>
+                </div>
+
+                <!-- Coupon Input -->
+                <div class="mt-3 flex items-center border rounded-lg p-2">
+                  <input
+                    id="cupon-input"
+                    type="text"
+                    placeholder="Have any coupon?"
+                    class="flex-1 outline-none text-gray-600 placeholder-gray-400 px-2"
+                  />
+                  <button
+                    id="apply-btn"
+                    class="bg-primary-color text-white px-4 py-1 rounded-md font-semibold"
+                  >
+                    Apply
+                  </button>
+                </div>
+
+                <!-- Grand Total -->
+                <div class="mt-3 flex justify-between font-bold text-lg">
+                  <span>Grand Total</span>
+                  <span>BDT <span id="price-cuppon-added">0</span></span>
+                </div>
+                <!-- input name and info -->
+                <div class="flex justify-center items-center mt-6">
+                  <div action="">
+                    <div class="bg-white p-6 rounded-lg w-96">
+                      <!-- Passenger Name -->
+                      <label class="block text-gray-700 font-medium mb-1"
+                        >Passenger Name*</label
+                      >
+                      <input
+                        type="text" required id="input-name"
+                        placeholder="Enter your name"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+                      />
+
+                      <!-- Phone Number -->
+                      <label class="block text-gray-700 font-medium mb-1"
+                        >Phone Number*</label
+                      >
+                      <input id="input-phone"
+                        type="tel" required
+                        placeholder="Enter your phone number"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+                      />
+
+                      <!-- Email ID -->
+                      <label class="block text-gray-700 font-medium mb-1"
+                        >Email ID</label
+                      >
+                      <input id="input-mail"
+                        type="email" required
+                        placeholder="Enter your email id"
+                        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 mb-4"
+                      />
+
+                      <!-- Next Button -->
+                      <button id="input-submit"
+                        class="w-full bg-green-500 text-white font-semibold py-2 rounded-lg hover:bg-green-600"
+                      >
+                        Next
+                      </button>
+
+                      <!-- Links -->
+                      <div
+                        class="flex justify-center space-x-4 mt-4 text-gray-500 text-sm"
+                      >
+                        <a href="#" class="hover:underline"
+                          >Terms and Conditions</a
+                        >
+                        <a href="#" class="hover:underline"
+                          >Cancellation Policy</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script/calculation.js"></script>
+  </body>
+</html>
